@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MEMO MarkDown" />
+    <meta property="og:site_name" content="MEMO MarkDown - Simple MarkDown MemoPad -" />
+    <meta name="discription" content="MEMO MarkDown - Simple MarkDown MemoPad シンプルなマークダウンメモ帳です -" />
+    <!-- <meta property="og:url" content="https://memomd.soulfree.jp/" /> -->
+    <meta property=”og:locale” content=”ja_JP” />  
+    <!-- <meta property="og:image" content="https://memomd.soulfree.jp/src/assets/imgs/OGP20240713-1.jpg" /> -->
+     <meta property="og:image" content="/src/assets/imgs/OGP20240713-1.jpg" />   <!--  ローカル開発環境 -->
+    
+    <title>MEMO MarkDown</title>
+    <link rel="icon" href="/src/assets/imgs/favicon.png">
+    <!-- <base href="https://memomd.soulfree.jp/" />  -->
+    <!-- <base href="http://localhost:5185/"> -->    <!--ローカル開発環境 -->
+    
+    <style type="text/css">
+      span.noscript {color: red; font-size: large;}
+    </style>
+
+  </head>
+
+  <body>
+    <noscript>
+      <span class="noscript ja">このサイトではJavascriptを利用しています。ブラウザのJavascript設定を有効してご利用ください。</span>
+      <span class="noscript en">We're sorry but this site doesn't work properly without JavaScript enabled. Please enable it to continue.</span>
+    </noscript>
+    <div id="app"></div>
+    <div id="flash-message"></div>
+    <script type="module" src="/src/main.ts"></script> <!-- Mount Of Vue App -->
+  </body>
+
+</html>

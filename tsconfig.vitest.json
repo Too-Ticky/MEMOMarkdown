@@ -1,0 +1,49 @@
+{
+  "extends": "./tsconfig.app.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.vue",
+
+    "src/composables/**/*.ts",
+    "src/composables/**/*.js",
+    "src/components/**/*.vue",
+    "src/pages/**/*.vue",
+    "src/stores/**/*.ts",
+    "src/stores/**/*.js",
+
+    "src/App.vue",
+
+    "src/composables/firebaseAuthComposables.ts", 
+    "src/composables/firebaseInitialization.ts",   
+    "src/composables/firestoreMemosCRUD.ts",
+    "/src/composables/webStrorageChecker.ts",
+    
+    "src/components/GlobalFooter.vue",
+    "src/components/GlobalHeader.vue",
+    "src/components/LayoutAgree.vue",
+    "src/components/LayoutApp.vue",
+    "src/components/MDEditor.vue",
+    "src/components/TheAccountBtn.vue", 
+    "src/components/TheAccountMenu.vue",
+    "src/components/TheCmd.vue",
+    "src/components/TheHamburger.vue",
+    "src/components/TheMenu.vue",
+    "src/components/TheModal.vue",
+    "src/components/TheNav.vue",
+    "src/components/WebStorageSettings.vue",
+
+    "src/pages/Page404.vue",
+    "src/pages/PageMemo.vue",
+    "src/pages/PagePrivacyPolicy.vue",
+    "src/pages/PageTermsOfUse.vue",
+    "src/pages/PageWelcome.vue",
+  ],
+  "exclude": [],
+  "compilerOptions": {
+    "composite": true,
+    "lib": [],
+    "types": ["node", "jsdom"],
+    "outDir": "./dist"
+  }
+}

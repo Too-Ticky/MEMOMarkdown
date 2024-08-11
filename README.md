@@ -3,7 +3,7 @@
 ## はじめに
 - 本サイトは、書籍「Vue.jsとFirebaseで作るミニWebサービス」(ISBN978-4-8443-9861-5)を参考にし、以下の変更を加えながら学習用に再構築したものです。
 
-## 主な変更点
+## (Ver.1)主な変更点
 ### コード 環境・構成の見直し
 - Vue2+webpack => Vue3+Vite
 - Vue OptionsAPI => ConpositonAPI('script setup' syntax)
@@ -25,3 +25,7 @@
 - レスポンシブル対応
 - ダークモード対応
 - 日英言語切替対応
+  
+## (Ver.2)
+- Googleサインイン JavaScript ライブラリのサポート終了に伴うGoogle Identity Services (Sign In with Google)への移行(vue3-google-loginを利用)
+- analytics

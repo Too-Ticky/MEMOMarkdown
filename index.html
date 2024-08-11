@@ -11,7 +11,9 @@
     <!-- <meta property="og:url" content="https://memomd.soulfree.jp/" /> -->
     <meta property=”og:locale” content=”ja_JP” />  
     <!-- <meta property="og:image" content="https://memomd.soulfree.jp/src/assets/imgs/OGP20240713-1.jpg" /> -->
-     <meta property="og:image" content="/src/assets/imgs/OGP20240713-1.jpg" />   <!--  ローカル開発環境 -->
+    <meta property="og:image" content="/src/assets/imgs/OGP20240713-1.jpg" />   <!--  ローカル開発環境 -->
+    
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     
     <title>MEMO MarkDown</title>
     <link rel="icon" href="/src/assets/imgs/favicon.png">
@@ -29,6 +31,8 @@
       <span class="noscript ja">このサイトではJavascriptを利用しています。ブラウザのJavascript設定を有効してご利用ください。</span>
       <span class="noscript en">We're sorry but this site doesn't work properly without JavaScript enabled. Please enable it to continue.</span>
     </noscript>
+    <!-- Google 3P Authorization JavaScript Library  -->
+    <!-- <script src="https://accounts.google.com/gsi/client" onload="console.log('TODO: add onload function')"></script> -->
     <div id="app"></div>
     <div id="flash-message"></div>
     <script type="module" src="/src/main.ts"></script> <!-- Mount Of Vue App -->

@@ -20,15 +20,16 @@ export default ({ mode }: { mode: string }) => {
       vue(),
     ],
     server: {
-      port: 5185,
+      port: 5185, //port番号の指定
       host: true,
     },
+    base: '/', //ルートパスの指定(e.g. base:'memo' => http://localhost:5185/memo)
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       },
     },
-      build: {
+    build: {
     
     }
   });

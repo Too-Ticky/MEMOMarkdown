@@ -37,6 +37,14 @@
     };
   const restartEdit = () => router.push({name:'Edit'});
 
+  /* Google Indentity Authentication 
+     This callback will be triggered when the user selects or logs in to
+     their Google account from the popup
+  */
+  // const callback = (response:any) => {
+  // console.log("Handle the response", response)
+  // }
+
   /* The Browser's Web Storage Enable Cheker */ 
   import { isSessionStorageAvailable } from '@/composables/webStrorageChecker';
   const showModal = ref<boolean>(false);
@@ -95,8 +103,11 @@
       </div>
     </div>
     <!-- Start Google Signing-In/Up -->
+
     <div class="signin wrapper" v-if="!currentUser">
       <h2 class="signin">{{ sentences[1] }}</h2>
+      <!-- <GoogleLogin :callback="callback"/>  -->
+      
       <div class="btn signin" >
         <button type="button" class="ui btn google firebaseauth" v-on:click="startGoogle" >
           <img class="firebase-auth-icon" alt="Google" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">

@@ -9,7 +9,7 @@
 - Vue OptionsAPI => ConpositonAPI('script setup' syntax)
 - Javascript => Typescript
 - コンポーネント間データ連携　props/emit => pinia ('setup function' syntax)
-- Firebase/Auth関連の汎用的無関数部分をコンポーサブルへ分離
+- Firebase/Auth関連の汎用的関数部分をコンポーサブルへ分離
 - Firebase接続初期化スニペットを環境変数へ分離保管。dotenvのモードオプションでgit公開非公開を管理。
 - Firebase 使用APIのアップデート　the namespaced API => the modular API 
 - データベースのアップデート　realtimeDatabase => Firestore

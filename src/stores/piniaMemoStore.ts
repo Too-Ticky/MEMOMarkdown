@@ -47,7 +47,7 @@ export const useMemoStore = defineStore('memoStore', () =>
       memos.markdown.push("New");
      // sessionStorage.setItem("memos",memos.markdown);
       sessionStorage.setItem("memos", memos.markdown.join(','));
-      location.reload()
+      // location.reload();
     }
     
     function deleteMemo():void {
